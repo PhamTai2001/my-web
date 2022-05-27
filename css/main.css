@@ -1,0 +1,68 @@
+
+.shopping-mall {
+    bottom: 20px;
+   
+}
+
+.shopping-mall h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: rgb(20, 250, 212);
+    letter-spacing: .3px;
+    text-shadow: 0 0 2px black;
+    padding-bottom: 0px;
+    border-bottom: 1px dotted gray;
+    margin: 0px;
+    font-variant: small-caps;
+}
+
+.shopping-mall h6 {
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    letter-spacing: .5px;
+    float: left;
+    padding: 5px;
+}
+.navbar-nav
+{
+    padding-left: 10px;
+}
+.navbar-nav li
+{
+    padding-left: 50px;
+}
+.carousel-inner img{
+    height:450px;
+}
+.btn-lg{
+background-color: rgb(43, 134, 177);
+}
+.btn-lg:hover{
+    background-color: rgb(18, 84, 160);
+    color: black;
+    }
+.d-md-block{
+    margin-right: 600px;
+}
+.col-sm-6 
+{
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hover a
+{
+    background-color: rgb(247, 202, 0);
+    color: white;
+    margin: center;
+}
+.hover a:hover{
+    background-color: rgb(51, 50, 50);
+    color: white;
+}
+.fot .hover a{
+    width: 12%;
+    height: 33px;
+    
+}
+
+/* css cho phần 2 myteam */

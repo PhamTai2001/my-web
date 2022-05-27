@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="row ml-1 ">
+            <div class="shopping-mall pt-4">
+                <h1>Online shopping animal</h1>
+                <h6>+84 0989665953</h6>
+                <h6>Phamvantaiki@gmail.com</h6>
+            </div>
+            <img src="./images/header.jpg" alt="Ảnh header" width="20%" class="ml-auto mr-3">
+        </header>
+       
+        <nav class="navbar navbar-expand-lg " style="background-color: #434f53;">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active  ">
+                        <a class="nav-link text-light" href="#"> <i class="fas fa-home"></i> Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#"><i class="fa-solid fa-address-card"></i>About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                class="fa-brands fa-blogger"></i>
+                            Blog
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">My Blog</a>
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">Blog Chain</a>
+                            <a class="dropdown-item" href="#">Another Blog</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                class="fa-solid fa-cart-shopping"></i>
+                            Shop
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="shopall.html">For all animal</a>
+                            <a class="dropdown-item" href="#">CatPet</a>
+                            <a class="dropdown-item" href="#">DogPet</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
+                     <div class="">
+                        <div class="form-outline">
+                            <input type="search" id="form1" class="form-control" placeholder="Search" />                            
+                        </div>
+                    </div> 
+                <li class="nav-item">
+                        <a class="nav-link text-light" href="Login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Đăng Nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="dangki.html"><i class="fa-solid fa-user-plus"></i>Đăng ký</a>
+                    </li>
+                </ul>
+              
+            </div>
+        </nav>
+        
+    </div>
+</nav>
+<!-- end header -->
+
+<main role="main">
+    <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+    <div class="container mt-4">
+        <div id="thongbao" class="alert alert-danger d-none face" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+
+        <h1 class="text-center" style="color:green; margin-top:50px;margin-bottom:50px;text-shadow: 2px 2px rgb(44, 44, 44);">View Cart</h1>
+        <div class="row">
+            <div class="col col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Ảnh đại diện</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th>Thành tiền</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="datarow">
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="./images/shopdog2.jpg" width="30%" >
+                            </td>
+                            <td>Apple Ipad 4 Wifi 16GB</td>
+                            <td class="text-right">2</td>
+                            <td class="text-right">11,800,000.00</td>
+                            <td class="text-right">23,600,000</td>
+                            <td>
+                                <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                <a id="delete_1" data-sp-ma="2" class="btn btn-danger btn-delete-sanpham">
+                                    <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <img src="./images/shopdog2.jpg" width="30%" >
+                            </td>
+                            <td>Nokia Asha 311</td>
+                            <td class="text-right">4</td>
+                            <td class="text-right">2,699,000.00</td>
+                            <td class="text-right">1,0796,000</td>
+                            <td>
+                                <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                <a id="delete_2" data-sp-ma="6" class="btn btn-danger btn-delete-sanpham">
+                                    <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <img src="./images/shopdog2.jpg" width="30%" >
+                            </td>
+                            <td>Apple iPhone 5 16GB White</td>
+                            <td class="text-right">8</td>
+                            <td class="text-right">1,4990,000.00</td>
+                            <td class="text-right">119,920,000</td>
+                            <td>
+                                <!-- Nút xóa, bấm vào sẽ xóa thông tin dựa vào khóa chính `sp_ma` -->
+                                <a id="delete_3" data-sp-ma="4" class="btn btn-danger btn-delete-sanpham">
+                                    <i class="fa fa-trash" aria-hidden="true"></i> Xóa
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a href="../index.html" class="btn btn-warning btn-md"><i class="fa fa-arrow-left"
+                        aria-hidden="true"></i>&nbsp;Quay
+                    về trang chủ</a>
+                <a href="checkout.html" class="btn btn-primary btn-md"><i
+                        class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Thanh toán</a>
+            </div>
+        </div>
+    </div>
+    <!-- End block content -->
+</main>
+    </div>
+    <footer class="container mt-5 bg-dark pt-5 text-white ">
+        <div class="row">
+            <div class="col-4 ">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="./images/footer.png" alt="">
+                    </div>
+                    <div class="col-9 ">
+                        <h4>Pupper</h4>
+                        <p class="text-muted">Niềm tin <br> Uy tín</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="f-body col-4 text-center">
+                <p class=" p-3 ">FPT Polytechnic &copy; 2022, All rights revered.</p>
+            </div>
+            <div class="col-4 fot">
+                <div class="row hover pl-5">    
+                        <a class="btn  rounded-circle m-2" href="#"><i class="fa-brands fa-facebook "></i></a>
+                        <a class="btn rounded-circle m-2" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="btn rounded-circle m-2" href="#"><i class="fa-brands fa-instagram"></i></a>   
+                        <a class="btn rounded-circle m-2" href="#"><i class="fa-brands fa-skype"></i></a>
+                        <a class="btn rounded-circle m-2" href="#"><i class="fa-brands fa-tiktok"></i></a>       
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+.shopping-mall {
+    bottom: 20px;
+   
+}
+
+.shopping-mall h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: rgb(20, 250, 212);
+    letter-spacing: .3px;
+    text-shadow: 0 0 2px black;
+    padding-bottom: 0px;
+    border-bottom: 1px dotted gray;
+    margin: 0px;
+    font-variant: small-caps;
+}
+
+.shopping-mall h6 {
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    letter-spacing: .5px;
+    float: left;
+    padding: 5px;
+}
+.navbar-nav
+{
+    padding-left: 10px;
+}
+.navbar-nav li
+{
+    padding-left: 50px;
+}
+.carousel-inner img{
+    height: 450px;
+}
+.contacproducts{
+    
+        font-size: 1.5em;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom: 1px dotted gray;         
+}
